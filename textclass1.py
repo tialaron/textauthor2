@@ -13,7 +13,7 @@ nClasses = len(className)
 test_path11 = '/app/textauthor2/test/'
 
 model01 = load_model('/app/textauthor2/model_author_all.h5')
-with open('C:\\PycharmProjects\\textclass\\venv\\tokenizer.pickle', 'rb') as handle:
+with open('/app/textauthor2/tokenizer.pickle', 'rb') as handle:
     tokenizer2 = pickle.load(handle)
 
 col5,col6 = st.columns(2)
