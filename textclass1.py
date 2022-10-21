@@ -16,7 +16,9 @@ model01 = load_model('/app/textauthor2/model_author_all.h5')
 with open('/app/textauthor2/tokenizer.pickle', 'rb') as handle:
     tokenizer2 = pickle.load(handle)
 pictures_path = '/app/textauthor2/pictures/'
-    
+
+st.header('Искусственный Интеллект для определения авторства текста.')
+
 with st.sidebar:
     st.markdown(''' # Содержание:''')
     st.markdown("## [1. Актуальность тематики](#about)", unsafe_allow_html=True)
@@ -34,7 +36,7 @@ st.write('2.Студентам, изучающим принципы информ
 st.write('3.Студентам других специальностей, интересующимся возможностями применением искусственного интеллекта в области изучения текстовых данных.')
 
 st.header('Этапы разработки кейса', anchor='pipeline')
-st.image(image_pipe,caption='Этапы проектирования кейса')
+st.image(pictures_path+'realtrack1.jpg',caption='Этапы проектирования кейса')
 with st.expander("Общая схема"):
     st.markdown(
         '''
