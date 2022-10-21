@@ -10,9 +10,9 @@ from PIL import Image
 
 className = ["О. Генри", "Стругацкие", "Булгаков", "Клиффорд_Саймак", "Макс Фрай", "Брэдберри"] # Объявляем интересующие нас классы
 nClasses = len(className)
-test_path11 = 'C:\\PycharmProjects\\textclass\\venv\\test\\'
+test_path11 = '/app/textauthor2/test/'
 
-model01 = load_model('C:\\PycharmProjects\\textclass\\venv\\model_author_all.h5')
+model01 = load_model('/app/textauthor2/model_author_all.h5')
 with open('C:\\PycharmProjects\\textclass\\venv\\tokenizer.pickle', 'rb') as handle:
     tokenizer2 = pickle.load(handle)
 
