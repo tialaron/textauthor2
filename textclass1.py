@@ -183,7 +183,7 @@ an4 = st.checkbox('Загрузочная')
 an5 = st.checkbox('Обучающая')
 an6 = st.checkbox('Нормальная')
 
-if an2 and an5 and not an1,an3,an4,an6:
+if an2 and an5 and not an1 and not an3 and not an4 and not an6:
     st.write('Правильно!')
 
 
