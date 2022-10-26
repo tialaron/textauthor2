@@ -167,7 +167,23 @@ for i in range(nClasses):
     # print(str1, " " * (55-len(str1)), isRecognized, sep='')
     st.write(str1, " " * (55 - len(str1)))
 
-sumCount = 0
-for i in range(nClasses):
-    sumCount += len(xTest[i])
-st.write("Средний процент повторимости текста ", int(100 * totalSumRec / sumCount), "%", sep='')
+#sumCount = 0
+#for i in range(nClasses):
+#    sumCount += len(xTest[i])
+#st.write("Средний процент повторимости текста ", int(100 * totalSumRec / sumCount), "%", sep='')
+
+#_______________________Тест___________________________________________
+st.subheader('Тест',anchor='voprosi')
+st.write('Вопросы по данной тематике')
+st.write('1. Как называются выборки, которые применяют для обучения нейронной сети?')
+an1 = st.checkbox('Разводящая')
+an2 = st.checkbox('Тестовая')
+an3 = st.checkbox('Текстовая')
+an4 = st.checkbox('Загрузочная')
+an5 = st.checkbox('Обучающая')
+an6 = st.checkbox('Нормальная')
+
+if an2 and an5:
+    st.write('Правильно!')
+
+
