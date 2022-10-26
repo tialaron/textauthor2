@@ -186,4 +186,11 @@ an6 = st.checkbox('Нормальная')
 if an2 and an5 and not an1 and not an3 and not an4 and not an6:
     st.write('Правильно!')
 
-
+st.write('2. Что представляет из себя словарь частотности?')
+bn1 = st.checkbox('Представление слова в виде частоты колебаний')
+bn2 = st.checkbox('Сопоставление слова и количества его синонимов.')
+bn3 = st.checkbox('Сопоставление частоты и напряжения слова')
+bn4 = st.checkbox('Сопоставление слова и частоты его появления в тексте')
+bn5 = st.checkbox('Показания напряженности слова')
+if bn4 and not bn1 and not bn2 and not bn3 and not bn5:
+    st.write('Правильно!')
