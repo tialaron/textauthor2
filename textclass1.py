@@ -36,7 +36,7 @@ st.write('2.Студентам, изучающим принципы информ
 st.write('3.Студентам других специальностей, интересующимся возможностями применением искусственного интеллекта в области изучения текстовых данных.')
 
 st.subheader('Этапы разработки кейса', anchor='pipeline')
-st.image(pictures_path+'realtrack1.jpg',caption='Этапы проектирования кейса')
+st.image(pictures_path+'pipelineauthors2.jpg',caption='Этапы проектирования кейса')
 with st.expander("Общая схема"):
     st.markdown(
         '''
